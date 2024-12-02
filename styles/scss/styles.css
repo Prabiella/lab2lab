@@ -157,7 +157,6 @@ footer .footer-section ul li a:hover {
 .main-container {
   display: flex;
   flex-direction: column;
-  height: 50vh;
 }
 
 .content {
@@ -216,6 +215,39 @@ footer .footer-section ul li a:hover {
   margin: 0;
 }
 
+/* Ajustes al body */
+.destacar {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.TxtResum {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.HightLightGris {
+  background-color: #ECF1FA;
+  padding: 5px 15px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border-radius: 5px;
+}
+
+.HightLightYellow {
+  background-color: #FFF2BC;
+  padding: 5px 15px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border-radius: 20px;
+}
+
+.divider {
+  border-left: 1px solid #D7E4FC;
+  height: auto;
+  margin: 0;
+}
+
 @media (max-width: 768px) {
   footer {
     flex-direction: column;
@@ -271,6 +303,82 @@ footer .footer-section ul li a:hover {
   .table-container table td:nth-child(4) {
     display: none;
   }
+}
+
+/* Tabla catalopg-studies */
+.table-Catalog {
+  border: 0px;
+}
+.table-Catalog thead, .table-Catalog tbody, .table-Catalog tr, .table-Catalog th {
+  text-align: left;
+}
+.table-Catalog #table-body, .table-Catalog td {
+  text-align: left;
+}
+.table-Catalog #table-body, .table-Catalog td a {
+  margin-right: 10px;
+}
+.table-Catalog #table-body, .table-Catalog tr {
+  border: 5px solid #fff;
+}
+.table-Catalog #table-body, .table-Catalog td {
+  background-color: #ecf1fa;
+}
+
+.scrollable-table {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#style-2::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #ecf1fa;
+}
+
+#style-2::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #3E95F8;
+}
+
+@media (max-width: 1024px) {
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0 !important;
+  }
+}
+/* Lables-status */
+.labelGreen {
+  border: 2px solid #61B26D;
+  padding: 5px 15px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border-radius: 20px;
+}
+
+.labelYellow {
+  border: 2px solid #E6DA32;
+  padding: 5px 15px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border-radius: 20px;
+}
+
+.labelRed {
+  border: 2px solid #FA5D7C;
+  padding: 5px 15px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border-radius: 20px;
+}
+
+.observ {
+  border: 10px solid #ECF1FA !important;
 }
 
 /* Estilo botón crud */
@@ -502,7 +610,7 @@ footer .footer-section ul li a:hover {
 .btn-blue {
   padding: 0.5em 1em;
   border: none;
-  background-color: #1e7de6;
+  background-color: #2674FB;
   color: white;
   font-size: 0.9em;
   cursor: pointer;
@@ -852,6 +960,18 @@ table th {
 .table thead th:nth-child(3),
 .table tbody td:nth-child(3) {
   width: auto;
+}
+
+/* Botones */
+.flex-buttons-center {
+  display: flex;
+  justify-content: center;
+  color: #2674FB;
+}
+
+/* Thankyou Pages */
+.HightLight {
+  color: #FA5D7C;
 }
 
 @media screen and (max-width: 1024px) {

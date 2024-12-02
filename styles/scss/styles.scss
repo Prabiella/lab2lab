@@ -21,6 +21,10 @@ $table-striped-bg: #ecf1fa;
 $bs-body-bg: red;
 $input-back: #eff4f8;
 $border-input: #25385a;
+$color-btn: #2674FB;
+$color-highlights:#FA5D7C;
+$color-highlights-Gris:#ECF1FA;
+$color-highlights-Yellow:#FFF2BC;
 
 body {
   background-color: $body-color !important;
@@ -195,7 +199,7 @@ footer {
 .main-container {
   display: flex;
   flex-direction: column;
-  height: 50vh;
+
 }
 
 .content {
@@ -262,6 +266,39 @@ footer {
   }
 }
 
+
+/* Ajustes al body */
+.destacar {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.TxtResum{
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.HightLightGris{
+  background-color: $color-highlights-Gris;
+  padding: 5px 15px;
+  max-width: fit-content;
+  border-radius: 5px;
+}
+
+.HightLightYellow{
+  background-color: $color-highlights-Yellow;
+  padding: 5px 15px;
+  max-width: fit-content;
+  border-radius: 20px;
+}
+
+
+.divider {
+  border-left: 1px solid #D7E4FC; 
+  height: auto; 
+  margin: 0; 
+}
+
 @media (max-width: 768px) {
   footer {
     flex-direction: column;
@@ -326,6 +363,104 @@ footer {
       }
     }
   }
+}
+
+
+/* Tabla catalopg-studies */
+
+.table-Catalog {
+  border: 0px;
+
+  thead, tbody, tr, th{
+    text-align: left;
+  }
+
+  #table-body, td{
+    text-align: left;
+  }
+
+  #table-body, td a{
+    margin-right: 10px;
+  }
+  
+  #table-body, tr {
+   border: 5px solid #fff;
+    
+  }
+
+
+  #table-body, td {
+    background-color: $table-striped-bg;
+
+  }
+
+}
+
+.scrollable-table {
+  max-height: 300px;
+  overflow-y: auto;
+  
+}
+
+
+#style-2::-webkit-scrollbar-track
+{
+	
+	border-radius: 10px;
+	background-color:$table-striped-bg;
+}
+
+#style-2::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #3E95F8;
+}
+
+@media (max-width: 1024px) {
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0!important;
+}
+}
+
+/* Lables-status */
+
+.labelGreen{
+  border: 2px solid #61B26D;
+  padding: 5px 15px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border-radius: 20px;
+}
+
+
+.labelYellow{
+  border: 2px solid #E6DA32;
+  padding: 5px 15px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border-radius: 20px;
+}
+
+
+.labelRed{
+  border: 2px solid #FA5D7C;
+  padding: 5px 15px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border-radius: 20px;
+}
+
+
+.observ{
+ border: 10px solid #ECF1FA!important;
 }
 
 /* Estilo botón crud */
@@ -573,7 +708,7 @@ footer {
 .btn-blue {
   padding: 0.5em 1em;
   border: none;
-  background-color: #1e7de6;
+  background-color:$color-btn;
   color: white;
   font-size: 0.9em;
   cursor: pointer;
@@ -951,6 +1086,22 @@ table th {
   width: auto;
 }
 
+
+/* Botones */
+.flex-buttons-center {
+  display: flex;
+  justify-content: center;
+  color:$color-btn;
+}
+
+
+
+/* Thankyou Pages */
+
+.HightLight{
+  color: $color-highlights;
+}
+
 @media screen and (max-width: 1024px) {
   table {
     border: 0;
@@ -994,6 +1145,7 @@ table th {
   table td:last-child {
     border-bottom: 0;
   }
+
 }
 
 /* Orden */
@@ -1071,8 +1223,3 @@ table tr {
 }
 
 }
-
-
-
-
-
