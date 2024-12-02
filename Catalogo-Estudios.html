@@ -212,40 +212,77 @@
                     
                     <tbody id="table-body">
                       <tr>
-                        <td data-label="#Foilio"><a href="#" class="HightLight">2926</a> HCG BETA LIBRE (GONADOTROFINA -CORONICA LIBRE), SUERO</td>
+                       
+                        <td data-label="#Folio">
+                          <a href="#" class="HightLight" data-bs-toggle="modal" data-bs-target="#DetailStudioModal">2926</a> 
+                          HCG BETA LIBRE (GONADOTROFINA - CORIÓNICA LIBRE), SUERO
+                      </td>
                       </tr>
                       <tr>
-                        <td data-label="#Foilio"><a href="#" class="HightLight">3265</a> HCG ADIPONECTINA, SUERO</td>
+                        <td data-label="#Foilio" data-bs-toggle="modal" data-bs-target="#DetailStudioModal">
+                          <a href="#" class="HightLight">3265</a> 
+                          HCG ADIPONECTINA, SUERO
+                        </td>
                       </tr>
                       <tr>
-                        <td data-label="#Foilio"><a href="#" class="HightLight">789</a> DETERMINACIÓN GLUCOSA EN SUERO</td>
+                        <td data-label="#Foilio">
+                          <a href="#" class="HightLight" data-bs-toggle="modal" data-bs-target="#DetailStudioModal">789</a> 
+                          DETERMINACIÓN GLUCOSA EN SUERO
+                        </td>
                       </tr>
                       <tr>
-                        <td data-label="#Foilio"><a href="#" class="HightLight">734</a> DETERMINACIÓN GLUCOSA EN SUERO</td>
+                        <td data-label="#Foilio">
+                          <a href="#" class="HightLight" data-bs-toggle="modal" data-bs-target="#DetailStudioModal">734</a>
+                          DETERMINACIÓN GLUCOSA EN SUERO
+                        </td>
                       </tr>
                       <tr>
-                        <td data-label="#Foilio"><a href="#" class="HightLight">734</a> DETERMINACIÓN GLUCOSA EN SUERO</td>
+                        <td data-label="#Foilio">
+                          <a href="#" class="HightLight" data-bs-toggle="modal" data-bs-target="#DetailStudioModal">734</a> 
+                          DETERMINACIÓN GLUCOSA EN SUERO
+                        </td>
                       </tr>
                       <tr>
-                        <td data-label="#Foilio"><a href="#" class="HightLight">734</a> DETERMINACIÓN GLUCOSA EN SUERO</td>
+                        <td data-label="#Foilio">
+                          <a href="#" class="HightLight" data-bs-toggle="modal" data-bs-target="#DetailStudioModal">734</a> 
+                          DETERMINACIÓN GLUCOSA EN SUERO
+                        </td>
                       </tr>
                       <tr>
-                        <td data-label="#Foilio"><a href="#" class="HightLight">734</a> DETERMINACIÓN GLUCOSA EN SUERO</td>
+                        <td data-label="#Foilio">
+                          <a href="#" class="HightLight" data-bs-toggle="modal" data-bs-target="#DetailStudioModal">734</a> 
+                          DETERMINACIÓN GLUCOSA EN SUERO
+                        </td>
                       </tr>
                       <tr>
-                        <td data-label="#Foilio"><a href="#" class="HightLight">734</a> DETERMINACIÓN GLUCOSA EN SUERO</td>
+                        <td data-label="#Foilio">
+                          <a href="#" class="HightLight" data-bs-toggle="modal" data-bs-target="#DetailStudioModal">734</a> 
+                          DETERMINACIÓN GLUCOSA EN SUERO
+                        </td>
                       </tr>
                       <tr>
-                        <td data-label="#Foilio"><a href="#" class="HightLight">734</a> DETERMINACIÓN GLUCOSA EN SUERO</td>
+                        <td data-label="#Foilio">
+                          <a href="#" class="HightLight" data-bs-toggle="modal" data-bs-target="#DetailStudioModal">734</a> 
+                          DETERMINACIÓN GLUCOSA EN SUERO
+                        </td>
                       </tr>
                       <tr>
-                        <td data-label="#Foilio"><a href="#" class="HightLight">734</a> DETERMINACIÓN GLUCOSA EN SUERO</td>
+                        <td data-label="#Foilio">
+                          <a href="#" class="HightLight" data-bs-toggle="modal" data-bs-target="#DetailStudioModal">734</a> 
+                          DETERMINACIÓN GLUCOSA EN SUERO
+                        </td>
                       </tr>
                       <tr>
-                        <td data-label="#Foilio"><a href="#" class="HightLight">734</a> DETERMINACIÓN GLUCOSA EN SUERO</td>
+                        <td data-label="#Foilio">
+                          <a href="#" class="HightLight" data-bs-toggle="modal" data-bs-target="#DetailStudioModal">734</a> 
+                          DETERMINACIÓN GLUCOSA EN SUERO
+                        </td>
                       </tr>
                       <tr>
-                        <td data-label="#Foilio"><a href="#" class="HightLight">734</a> DETERMINACIÓN GLUCOSA EN SUERO</td>
+                        <td data-label="#Foilio">
+                          <a href="#" class="HightLight" data-bs-toggle="modal" data-bs-target="#DetailStudioModal">734</a> 
+                          DETERMINACIÓN GLUCOSA EN SUERO
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -295,47 +332,53 @@
     </footer>
 
 
-<!-- Modal de Edición o Eliminación -->
-<div class="modal fade" id="editDeleteModal" tabindex="-1" aria-labelledby="editDeleteModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+<!-- Modal detalle de estudio -->
+ 
+<div class="modal fade" id="DetailStudioModal" tabindex="-1" aria-labelledby="DetailStudioLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="editDeleteModalLabel">Editar o Eliminar Registro</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Formulario de edición -->
-          <div id="editFormSection">
-            <form id="editForm">
-              <div class="mb-3">
-                <label for="editFecha" class="form-label">Fecha de captura</label>
-                <input type="text" class="form-control" id="editFecha" required>
-              </div>
-              <div class="mb-3">
-                <label for="editPaciente" class="form-label">Paciente</label>
-                <input type="text" class="form-control" id="editPaciente" required>
-              </div>
-              <div class="mb-3">
-                <label for="editEstudios" class="form-label">#Estudios</label>
-                <input type="number" class="form-control" id="editEstudios" required>
-              </div>
-              <div class="mb-3">
-                <label for="editImporte" class="form-label">Importe total</label>
-                <input type="text" class="form-control" id="editImporte" required>
-              </div>
-              <button type="submit" class="btn btn-primary">Guardar cambios</button>
-            </form>
+          <div class="modal-header">
+              <h1 class="modal-title fs-5" id="DetailStudioLabel">CÓDIGO PRUEBA 2629</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <!-- Confirmación de eliminación -->
-          <div id="deleteConfirmSection" style="display:none;">
-            <p>¿Está seguro de que desea eliminar este registro?</p>
-            <button id="confirmDeleteBtn" class="btn btn-danger">Eliminar</button>
-            <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <div class="modal-body">
+              <ul class="nav nav-tabs nav-test-code" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="specs" data-bs-toggle="tab" data-bs-target="#specs-pane" type="button" role="tab" aria-controls="specs-pane" aria-selected="true">Especificaciones</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="reference-values" data-bs-toggle="tab" data-bs-target="#reference-values-pane" type="button" role="tab" aria-controls="reference-values-pane" aria-selected="false">Valores de referencia</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="technical-sheet" data-bs-toggle="tab" data-bs-target="#technical-sheet-pane" type="button" role="tab" aria-controls="technical-sheet-pane" aria-selected="false">Ficha técnica</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="type-report" data-bs-toggle="tab" data-bs-target="#type-report-pane" type="button" role="tab" aria-controls="type-report-pane" aria-selected="false">Informe tipo</button>
+                  </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active p-3" id="specs-pane" role="tabpanel" aria-labelledby="specs" tabindex="0">
+                      <h6 class="fw-bold">ÁCIDO DELTA AMINO LEVULÍNICO (ALA)</h6>
+                      <ul class="body-test-code">
+                          <li>MUESTRAS: Suero (1 ml)</li>
+                          <li>CONSERVACIÓN: Congelada - ESTABILIDAD DE LA MUESTRA - 1 semana Refrigerada</li>
+                          <li>TÉCNICA: Espectrofometría</li>
+                          <li>PLAZO DE ENTREGA: 1 días</li>
+                          <li>TIEMPO DE PROCESO: 24 hrs</li>
+                          <li>DÍAS DE PROCESO: 1 - 2 DÍAS</li>
+                      </ul>
+                  </div>
+                  <div class="tab-pane fade" id="reference-values-pane" role="tabpanel" aria-labelledby="reference-values" tabindex="0">valores</div>
+                  <div class="tab-pane fade" id="technical-sheet-pane" role="tabpanel" aria-labelledby="technical-sheet" tabindex="0">ficha</div>
+                  <div class="tab-pane fade" id="type-report-pane" role="tabpanel" aria-labelledby="type-report" tabindex="0">info</div>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
   </div>
+</div>
+
+
+
 
     <script src="js/bt-crud.js"></script>
     <script src="js/delete-cart.js"></script>

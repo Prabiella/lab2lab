@@ -33,6 +33,11 @@ body {
   height: 100%;
 }
 
+
+
+
+
+
 /* Header */
 .bg-nav {
   background: $bg-nav;
@@ -135,6 +140,66 @@ body {
     border-radius: 76px !important;
   }
 }
+
+
+/* Login */
+.background-image {
+  background: url('../../assets/images/back/back-ground.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+.form-container {
+  background-color: #FFF;
+  padding: 30px;
+  border-radius: 10px;
+ 
+}
+.form-logo {
+  max-width: 280px;
+  margin-bottom: 20px;
+}
+
+.form-custom-width {
+  width: 400px;
+  max-width: 100%; 
+  margin: 0 auto; 
+}
+
+
+
+/* Estilos Checkbox */
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px; /* Esquinas redondeadas */
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  background-color: #fff; /* Fondo blanco por defecto */
+  transition: all 0.3s ease; /* Animación suave */
+}
+
+/* Fondo naranja cuando el checkbox está seleccionado */
+input[type="checkbox"]:checked {
+  background-color: orange;
+  border-color: orange; /* Cambiar el borde a naranja también */
+}
+
+/* Marca de verificación personalizada */
+input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
 
 /* Footer principal */
 footer {
@@ -287,6 +352,12 @@ footer {
 
 .HightLightYellow{
   background-color: $color-highlights-Yellow;
+  padding: 5px 15px;
+  max-width: fit-content;
+  border-radius: 20px;
+}
+.HightLightBlue{
+  background-color: $footer-section;
   padding: 5px 15px;
   max-width: fit-content;
   border-radius: 20px;
@@ -448,6 +519,8 @@ footer {
   max-width: fit-content;
   border-radius: 20px;
 }
+
+
 
 
 .labelRed{

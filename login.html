@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SYNLAB</title>
+  <link rel="stylesheet" href="./styles/scss/styles.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="background-image">
+ 
+  <div class="container h-100">
+    <div class="row h-100 gx-1 ">
+        <!-- Columna 1: Formulario -->
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
+          <div class="form-container form-custom-width text-center">
+              <img src="assets/images/logos/logo_2.svg" alt="Logo" class="form-logo">
+              <h5 class="mb-4">Inicia sesión con tu cuenta</h5>
+              <form>
+                  <!-- Campo de correo con ícono -->
+                  <div class="mb-3 input-group">
+                      <span class="input-group-text">
+                          <img src="assets/images/icons-login/user-icon.svg" alt="user Icon" style="width: 20px;">
+                      </span>
+                      <input type="text" class="form-control" id="email" placeholder="Ingresa tu usuario">
+                  </div>
+      
+                  <!-- Campo de contraseña con ojo -->
+                  <div class="mb-3 input-group">
+                    <span class="input-group-text">
+                      <img src="assets/images/icons-login/lock-icon.svg" alt="Contrasena Icon" style="width: 20px;">
+                    </span>
+                      <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                      <button type="button" class="btn btn-outline-secondary" id="togglePassword">
+                          <img src="assets/images/icons-login/eye-closed-icon.svg" alt="Toggle Password Visibility" id="passwordIcon" style="width: 20px;">
+                      </button>
+                  </div>
+      
+                  <!-- Recordar contraseña -->
+                  <div class="mb-3 d-flex align-items-center">
+                      <input type="checkbox" id="remember" class="me-2">
+                      <label for="remember" class="mb-0">Recordar contraseña</label>
+                  </div>
+                  
+                  <input type="submit" class="btn btn-primary w-100" value="Continuar">
+                  <!-- Botón de enviar -->
+                
+              </form>
+              <hr>
+      
+              <!-- Olvidaste tu contraseña -->
+              <h6 class="mb-3">¿No recuerdas tu contraseña?</h6>
+              <center>
+                  <h6 class="HightLightBlue text-white text-center d-flex align-items-center justify-content-center">
+                      ¿No recuerdas tu contraseña?
+                  </h6>
+              </center>
+          </div>
+      </div>
+        <!-- Columna 2 -->
+        <div class="col-md-6 d-flex align-items-center justify-content-left text-white">
+            <div class="text-left">
+                <h1 class="display-6">Gestión y seguimiento de tus estudios en un solo lugar</h1>
+                <p class="lead">Accede a tu cuenta para revisar, gestionar y dar seguimiento a todos tus estudios clínicos, mantén tus resultados siempre a la mano y recibe actualizaciones en tiempo real.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/login.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

@@ -178,7 +178,12 @@
             <div class="col-xl-12">
               <label for="exampleFormControlTextarea1" class="form-label">Observaciones</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              <button class="btn-blue mt-3" type="button" id="file-dataClient">Enviar solicitud</button>
+              <button class="btn-blue mt-3" type="button" id="file-dataClient" data-bs-toggle="modal" data-bs-target="#TpServicioRecoleccion">
+                Enviar solicitud
+              </button>
+
+
+
             </div>
              </div>
 
@@ -193,26 +198,10 @@
                 <p>Av. Revolución 123, Colonia Santa María, Iztapalapa, 09310 
                   Ciudad de México, CDMX</p>
                </div>
-
-
             </div>
           </div>
-          
-
-           
-            
           </div>
-
-
-
-        
-          
-
-
-
-
       </div>
-
       </form>
     </section>
    
@@ -258,49 +247,38 @@
   </footer>
 
 
-  <!-- Modal -->
-<div class="modal fade" id="info-modal" tabindex="-1" aria-labelledby="info-modalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="info-modalLabel">CÓDIGO PRUEBA 1089</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <ul class="nav nav-tabs nav-test-code nav-" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="specs" data-bs-toggle="tab" data-bs-target="#specs-pane" type="button" role="tab" aria-controls="specs-pane" aria-selected="true">Especificaciones</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="reference-values" data-bs-toggle="tab" data-bs-target="#reference-values-pane" type="button" role="tab" aria-controls="reference-values-pane" aria-selected="false">Valores de referencia</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="technical-sheet" data-bs-toggle="tab" data-bs-target="#technical-sheet-pane" type="button" role="tab" aria-controls="technical-sheet-pane" aria-selected="false">Ficha técnica</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="type-report" data-bs-toggle="tab" data-bs-target="#type-report-pane" type="button" role="tab" aria-controls="type-report-pane" aria-selected="false">Informe tipo</button>
-          </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active p-3" id="specs-pane" role="tabpanel" aria-labelledby="specs" tabindex="0">
-            <h6 class="fw-bold">ÁCIDO DELTA AMINO LEVULÍNICO (ALA)</h6>
-            <ul class="body-test-code">
-              <li>MUESTRAS: Suero (1 ml)</li>
-              <li>CONSERVACIÓN: Congelada - ESTABILIDAD DE LA MUESTRA - 1 semana Refrigerada</li>
-              <li>TÉCNICA: Espectrofometría</li>
-              <li>PLAZO DE ENTREGA: 1 días</li>
-              <li>TIEMPO DE PROCESO: 24 hrs</li>
-              <li>DÍAS DE PROCESO: 1 - 2 DÍAS</li>
-            </ul>
+
+
+ <!-- Modal de Edición o Eliminación -->
+
+<div class="modal fade" id="TpServicioRecoleccion" tabindex="-1" aria-labelledby="TpServicioRecoleccion" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+             
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
           </div>
-          <div class="tab-pane fade" id="reference-values-pane" role="tabpanel" aria-labelledby="reference-values" tabindex="0">valores</div>
-          <div class="tab-pane fade" id="technical-sheet-pane" role="tabpanel" aria-labelledby="technical-sheet" tabindex="0">ficha</div>
-          <div class="tab-pane fade" id="type-report-pane" role="tabpanel" aria-labelledby="type-report" tabindex="0">info</div>
+          <div class="modal-body">
+            <h5 class="modal-title text-center fw-bold" id="exampleModalLabel">
+              ¡SERVICIO DE RECOLECCIÓN 
+              <br/>
+              SOLICITADO CORRECTAMENTE!
+            </h5>
+          </div>
+          <div class="modal-footer d-flex justify-content-center align-items-center">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Nueva solicitud</button>
         </div>
+        
       </div>
-    </div>
   </div>
 </div>
+
+
+<script src="js/bt-crud.js"></script>
+<script src="js/delete-cart.js"></script>
+<script src="js/crud.js"></script>
+<script src="js/search.js"></script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
