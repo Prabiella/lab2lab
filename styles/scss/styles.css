@@ -127,6 +127,64 @@ body {
   margin: 0 auto;
 }
 
+.RecuContra {
+  text-decoration: none;
+}
+
+/* Inputs ttype 5 */
+/* Contenedor de los inputs */
+.code-input-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Estilo de cada input */
+.code-input {
+  width: 60px;
+  height: 50px;
+  text-align: center;
+  font-size: 24px;
+  border: 2px solid #ccc;
+  background-color: #ECF1FA;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Estilo cuando el input tiene valor (no vacío) */
+.code-input:valid {
+  border-color: #007bff;
+  background-color: #c0d6ff;
+}
+
+/* Estilo cuando el input está vacío (no válido) */
+.code-input:invalid {
+  border-color: #ccc;
+  background-color: #ECF1FA;
+}
+
+/* Estilo al enfocar el input */
+.code-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  background-color: white;
+}
+
+/* Ocultar flechas en inputs numéricos */
+.code-input::-webkit-inner-spin-button,
+.code-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+.code-input[type=number] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+
 /* Estilos Checkbox */
 input[type=checkbox] {
   -webkit-appearance: none;

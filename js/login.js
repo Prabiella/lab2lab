@@ -11,3 +11,5 @@ togglePassword.addEventListener('click', () => {
         ? 'assets/images/icons-login/eye-closed-icon.svg' 
         : 'assets/images/icons-login/eye-open-icon.svg';
 });
+
+  
