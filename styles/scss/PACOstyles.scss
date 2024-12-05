@@ -33,58 +33,22 @@ $color-celd-2:#3FC1D1;
 $color-celd-3:#9CA2AD;
 $color-celd-4:#18324F;
 
+
+
 body {
   background-color: $body-color !important;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Lato", sans-serif !important;
   color: $text-color !important;
   height: 100%;
 }
 
+/* Aquí el codigo 01 */
 
-/* hr */
-
-hr.separador {
-  border: 0;
-  height: 0;
-  border-top: 1px solid #acacac;
-  width: 80%;
-}
-
-
-/* Seccion datos del usuario Perfiles | Nuevo-usuarios.html */
-
-.alertPerfil {
-  background-color: #082F4A;
-  height: 50px;
-  padding: 3%;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 0.8rem;
-  font-weight: 300;
-  padding-left: 10px;
-}
-
-
-.alertPerfil img {
-  margin: 0 1%;
-}
-
-.iconPerfil{
-   list-style: none;
-   padding-left: 0px;
-   max-width: 80%;
-  li{
-    display: inline-block;
-
-  }
-
-}
 
 
 /* Header */
 .bg-nav {
   background: $bg-nav;
-  font-family: "Lato", sans-serif !important;
   a {
     color: $text-white !important;
     font-size: 1em;
@@ -263,6 +227,19 @@ hr.separador {
 .code-input[type="number"] {
   appearance: textfield;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Estilos Checkbox */
 input[type="checkbox"] {
@@ -533,10 +510,6 @@ footer {
   }
 }
 
-.table-striped>tbody>tr:nth-of-type(odd)>* {
-    --bs-table-color-type: var(--bs-table-striped-color);
-    --bs-table-bg-type: #ECF1FA !important;
-}
 
 /* Tabla catalopg-studies */
 
@@ -743,87 +716,7 @@ footer {
   background: #25385a;
   border-radius: 8px;
 }
-
-
-
-
-/* Estilos de tabla perfiles */
-
-
-.tablePerfil{
-    border-collapse: separate;
-    border-spacing: 8px;
-    width: 100%;
-  }
-
-  
-  
-  .tablePerfil th {
-    background-color: #f0f0f0;
-    color: #313030;
-  }
-  
-  .tablePerfil{
-    tr th{
-      background-color: $color-tabla;
-    }
-  }
-  
-  .tbodyPerfil{
-    tr td:not(:first-child){
-      background-color: $color-tabla;
-    }
-  }
-  
- 
-
-/* Centrar en móviles */
-@media (max-width: 768px) {
-  .tablePerfil th,  .tablePerfil td {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-  }
-
-}
-
-
-
-.cell-content {
-  
-  text-align: center; 
-  vertical-align: middle; 
-  display: inline-block; 
-  width: 100%; 
-  text-transform: capitalize;
-  font-size: 1.1rem;
-  color:#18324F;
- 
-}
-
-
-
-.celdUno{
-  background-color:$color-celd-1;
-}
-
-.celdDos{
-  background-color:$color-celd-2;
-}
-
-.celdTres{
-  background-color:$color-celd-3;
-}
-
-.celdCuatro{
-  background-color:$color-celd-4;
-}
-
-
-
-
+/* aQUÍ EL CÓDIGO2 */
 
 /* Media queries */
 
@@ -966,7 +859,6 @@ footer {
   background-color:$color-btn;
   color: white;
   font-size: 0.9em;
-  font-weight: 600;
   cursor: pointer;
   box-shadow: 4px 5px 6px #00000038;
   border-radius: 4px !important;
@@ -988,9 +880,10 @@ footer {
   font-size: 0.9em;
   cursor: pointer;
   border-radius: 4px !important;
-  width: fit-content;
-  display: flex;
-  width: fit-content;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 }
 
 /* Datos Paciente */
@@ -1349,9 +1242,8 @@ table th {
   color:$color-btn;
 }
 
-.ql-editor {
-  min-height: 200px;
-}
+
+
 /* Thankyou Pages */
 
 .HightLight{
@@ -1407,206 +1299,75 @@ table th {
 /* Orden */
 .order {
   .title-orden-body {
-    background: #6a707e00 0% 0% no-repeat padding-box;
-    border: 1px solid #dddfe1;
-    padding: 1em;
-    color: $text-color;
-    margin: 0.5em 0;
-  }
+  background: #6a707e00 0% 0% no-repeat padding-box;
+  border: 1px solid #dddfe1;
+  padding: 1em;
+  color: $text-color;
+  margin: 0.5em 0;
+} 
 
-  .accordion-header {
-    background: $bg-title;
-    margin: 0.5em 0;
-  }
-
-
-  .accordion-item,
-  .table {
-    border: 0;
-    thead {
-      vertical-align: middle;
-    }
-    tr,
-    th {
-      background-color: #2d68ac;
-      color: $text-white;
-      font-size: 0.9em;
-      border: 10px solid #ecf1fa;
-      border-left: 0;
-      border-right: 0;
-    }
-    body {
-      border: 10px solid #ecf1fa;
-      border-left: 0;
-      border-right: 0;
-    }
-    tbody {
-      border: 10px solid #ecf1fa;
-      border-left: 0;
-      border-right: 0;
-    }
-  }
-
-  .acc-btn-orden {
-    background: transparent;
-    border: 0;
-
-    img {
-      width: 30px;
-    }
-  }
-  .label-orden {
-    color: #fa5d7c;
-  }
-
-  .accordion-orden {
-    .accordion-body {
-      border: 0;
-    }
-  }
-
-  .alert-icon {
-    width: 15px;
-  }
-
-  @media screen and (max-width: 1024px) {
-    table tr {
-      border-bottom: 1px solid #ddd;
-    }
-    tr,
-    th {
-      background-color: transparent !important;
-    }
-
-  }
-
-
-  @media screen and (max-width: 600px) {
-      .label-orden, p {
-        font-size: 0.8em !important;
-      }
-  
-  }
-
-/* Clau */
-
-/* Solicitar insumos */
-
-.back-title-blue {
-  background: #082f4a !important;
-  border: 0;
-  color: #fff;
-  h1 {
-    background: #082f4a;
-    border: 0;
-    color: #fff;
-    margin: 0;
-  }
-}
-
-.insumo-container {
-  background: #eff4f8;
-  border: 1px solid #25385a;
-  .ins-card {
-    border: 1px solid #25385a;
-    border-radius: 5px;
-    span {
-      background: #2674fb;
-      color: #fff;
-      padding: 0.5em;
-      font-size: 18px;
-      text-align: center;
-      width: 90px;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .delete-btn {
-      background: #082f4a;
-      display: flex;
-      padding: 0.3em 0.5em;
-
-      img {
-        width: 15px;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    p {
-      font-size: 0.8em;
-    }
-    span {
-      font-size: 1em !important;
-      width: fit-content !important;
-    }
-  }
-}
-
-/* Insumos solicitados por los laboratorios */
-
-.back-observ {
-  background: #ecf1fa;
-  padding: 1em !important;
+.accordion-header {
+  background: $bg-title;
   margin: 0.5em 0;
 }
 
-.id-insumo {
-  color: #fa5d7c;
-  text-decoration: underline;
-  font-weight: 600;
-}
-
-.content-status {
-  display: flex;
-  justify-content: center;
-
-  @media screen and (max-width: 1024px) {
-    justify-content: end;
+.accordion-item,
+.table {
+  border: 0;
+  thead {
+    vertical-align: middle;
   }
-}
-
-.canceled {
-  border: 2px solid #fa5d7c;
-  padding: 0.2em 1em;
-  border-radius: 1em;
-  width: fit-content;
-  margin: 0;
-}
-
-.pending {
-  border: 2px solid #E6DA32;
-  padding: 0.2em 1em;
-  border-radius: 1em;
-  width: fit-content;
-  margin: 0;
-}
-
-.accepted {
-  border: 2px solid #61B26D;
-  padding: 0.2em 1em;
-  border-radius: 1em;
-  width: fit-content;
-  margin: 0;
-}
-
-.color-mail {
-  color: #2674FB;
-    text-decoration: underline;
-}
-
-/* Generar notificación */
-
-.generate-notiModal {
-  h3 {
-    font-size: 1em;
-    color: #000511;
-  }
-  p {
-    color: #000511;
+   tr,
+   th {
+    background-color: #2D68AC;
+    color: $text-white;
     font-size: 0.9em;
+    border: 10px solid #ecf1fa;
+    border-left: 0;
+    border-right: 0;
+   }
+   body {
+    border: 10px solid #ECF1FA;
+    border-left: 0;
+    border-right: 0;
+   }
+   tbody {
+    border: 10px solid #ecf1fa;
+    border-left: 0;
+    border-right: 0;
+   }
+}
+
+.acc-btn-orden {
+  background: transparent;
+  border: 0;
+
+  img {
+    width: 30px;
   }
+}
+.label-orden {
+  color: #fa5d7c;
+}
+
+.accordion-orden {
+  .accordion-body {
+    border: 0;
+  }
+}
+
+.alert-icon {
+  width: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+table tr {
+  border-bottom: 1px solid #ddd;
+}
+   tr,
+   th {
+    background-color: transparent !important;
+   }
+}
+
 }

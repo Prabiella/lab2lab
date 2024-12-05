@@ -12,184 +12,142 @@
 </head>
 
 <body>
-    <header class="custom-header">
-        <!-- Barra superior -->
-        <div class="header-top">
-                <ul class="d-flex m-0 p-0">
-                    <li class="nav-item"> 
-                        <a class="navbar-brand" href="#">
-                            <img class="px-1" src="assets/images/icons-nav/telefono.svg" alt="teléfono">
-                            <span class="d-none d-lg-block">¿Tienes dudas llámanos? | <b>55 555 555 555</b></span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">
-                            <img class="px-1" src="assets/images/icons-nav/mail-icon.svg" alt="correo">
-                            <span class="d-none d-lg-block">Correo electrónico |
-                                <b>hola@laser.com.mx</b></span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img class="px-1" src="assets/images/icons-nav/time-icon.svg" alt="horario">
-                            <span class="d-none d-lg-block">Horario | <b>Lun - Dom: 7:00 -19:00</b></span></a>
-                    </li>
+  <header class="custom-header">
+    <!-- Barra superior -->
+    <div class="header-top">
+        <ul class="d-flex m-0 p-0">
+            <li class="nav-item">
+                <a class="navbar-brand" href="#">
+                    <img class="px-1" src="assets/images/icons-nav/telefono.svg" alt="teléfono">
+                    <span class="d-none d-lg-block">¿Tienes dudas llámanos? | <b>55 555 555 555</b></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                    <img class="px-1" src="assets/images/icons-nav/mail-icon.svg" alt="correo">
+                    <span class="d-none d-lg-block">Correo electrónico |
+                        <b>hola@laser.com.mx</b></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="px-1" src="assets/images/icons-nav/time-icon.svg" alt="horario">
+                    <span class="d-none d-lg-block">Horario | <b>Lun - Dom: 7:00 -19:00</b></span></a>
+            </li>
+        </ul>
+        <ul class="d-flex align-items-center m-0 p-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <span class="d-none d-lg-block">Notificaciones</span>
+                    <img class="px-1" src="assets/images/icons-nav/bell-icon.svg" alt="Notificaciones">
+                </a>
+                <ul class="dropdown-menu dropdown-nav">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
-                <ul class="d-flex align-items-center m-0 p-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <span class="d-none d-lg-block">Notificaciones</span>
-                            <img class="px-1" src="assets/images/icons-nav/bell-icon.svg" alt="Notificaciones">
-                        </a>
-                        <ul class="dropdown-menu dropdown-nav">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item bg-white d-none d-xl-block">
-                            <img class="img-fluid" src="assets/images/logos/logo-client-lab.svg" alt="Logo">
-                    </li>
-                </ul>
-        </div>
-    
-        <!-- Navbar principal -->
-        <nav class="navbar navbar-expand-lg header-navbar">
-          <div class="container-fluid px-3">
+            </li>
+            <li class="nav-item bg-white d-none d-xl-block">
+                <img class="img-fluid" src="assets/images/logos/logo-client-lab.svg" alt="Logo">
+            </li>
+        </ul>
+    </div>
+
+    <!-- Navbar principal -->
+    <nav class="navbar navbar-expand-lg header-navbar">
+        <div class="container-fluid px-3">
             <a class="navbar-brand header-logo" href="#">
                 <img src="assets/images/logos/laser-logo-main.svg" alt="LASER®">
             </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#customNavbar"
-              aria-controls="customNavbar"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#customNavbar"
+                aria-controls="customNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <div class="collapse navbar-collapse" id="customNavbar">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-wrap gap-3 gap-md-0 justify-content-center">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle custom-nav-link"
-                    href="#"
-                    id="ordenDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                  <img src="assets/images/icons-nav/ordenes-menu-icon.svg" alt="Orden">
-                    <span class="d-none d-md-block">Orden</span>
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="ordenDropdown">
-                    <li><a class="dropdown-item" href="nueva-captura.html">Nueva Captura</a></li>
-                    <li><a class="dropdown-item" href="pre-orden.html">Pre-ordenes</a></li>
-                    <li><a class="dropdown-item" href="orden.html">Ordenes</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle custom-nav-link"
-                    href="#"
-                    id="catalogoDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                  <img src="assets/images/icons-nav/catalogo-ordenes-menu-icon.svg" alt="Catálogo">                    
-                    <span class="d-none d-md-block">Catálogo</span>
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="catalogoDropdown">
-                    <li><a class="dropdown-item" href="#">Categoría 1</a></li>
-                    <li><a class="dropdown-item" href="#">Categoría 2</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link custom-nav-link" href="#">
-                    <img src="assets/images/icons-nav/dashboard-ordenes-menu-icon.svg" alt="Dashboard">
-                    <span class="d-none d-md-block">Dashboard</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle custom-nav-link"
-                    href="#"
-                    id="recoleccionDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                  <img src="assets/images/icons-nav/recolecordenes-menu-icon.svg" alt="Recolección">
-                   <span class="d-none d-md-block">Recolección</span>
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="recoleccionDropdown">
-                    <li><a class="dropdown-item" href="#">Nueva Recolección</a></li>
-                    <li><a class="dropdown-item" href="#">Recolecciones solicitadas</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle custom-nav-link"
-                    href="#"
-                    id="insumosDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                  <img src="assets/images/icons-nav/insumos-ordenes-menu-icon.svg" alt="Insumo">
-                    <span class="d-none d-md-block">Insumos</span>
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="insumosDropdown">
-                    <li><a class="dropdown-item" href="#">Nuevo insumo</a></li>
-                    <li><a class="dropdown-item" href="#">Insumos solicitados</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a                     
-                  class="nav-link dropdown-toggle custom-nav-link ad"
-                  href="#"
-                  id="avisosDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                    <img src="assets/images/icons-nav/avisos-ordenes-menu-icon.svg" alt="Avisos">
-                    <span class="d-none d-md-block">Avisos</span>
-                </a>
-                    <ul class="dropdown-menu" aria-labelledby="avisosDropdown">
-                        <li><a class="dropdown-item" href="#">Nuevo insumo</a></li>
-                        <li><a class="dropdown-item" href="#">Insumos solicitados</a></li>
-                      </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle custom-nav-link"
-                    href="#"
-                    id="usuariosDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                  <img src="assets/images/icons-nav/perfiles-ordenes-menu-icon.svg" alt="Usuario">
-                    <span class="d-none d-md-block">Usuarios</span>
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="usuariosDropdown">
-                    <li><a class="dropdown-item" href="#">Usuario 1</a></li>
-                    <li><a class="dropdown-item" href="#">Usuario 2</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link custom-nav-link" href="#">
-                    <img src="assets/images/icons-nav/facturas-ordenes-menu-icon.svg" alt="Facturas">
-                    <span class="d-none d-md-block">Facturas</span>
-                </a>
-                </li>
-              </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-wrap gap-3 gap-md-0 justify-content-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-nav-link" href="#" id="ordenDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/images/icons-nav/ordenes-menu-icon.svg" alt="Orden">
+                            <span>Orden</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ordenDropdown">
+                            <li><a class="dropdown-item" href="nueva-captura.html">Nueva Captura</a></li>
+                            <li><a class="dropdown-item" href="pre-orden.html">Pre-ordenes</a></li>
+                            <li><a class="dropdown-item" href="orden.html">Ordenes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-nav-link" href="#" id="catalogoDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/images/icons-nav/catalogo-ordenes-menu-icon.svg" alt="Catálogo">
+                            <span>Catálogo</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="catalogoDropdown">
+                            <li><a class="dropdown-item" href="#">Categoría 1</a></li>
+                            <li><a class="dropdown-item" href="#">Categoría 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#">
+                            <img src="assets/images/icons-nav/dashboard-ordenes-menu-icon.svg" alt="Dashboard">
+                            <span>Dashboard</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-nav-link" href="#" id="recoleccionDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/images/icons-nav/recolecordenes-menu-icon.svg" alt="Recolección">
+                            <span>Recolección</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="recoleccionDropdown">
+                            <li><a class="dropdown-item" href="#">Nueva Recolección</a></li>
+                            <li><a class="dropdown-item" href="#">Recolecciones solicitadas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-nav-link" href="#" id="insumosDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/images/icons-nav/insumos-ordenes-menu-icon.svg" alt="Insumo">
+                            <span>Insumos</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="insumosDropdown">
+                            <li><a class="dropdown-item" href="solicitar-insumos.html">Nuevo insumo</a></li>
+                            <li><a class="dropdown-item" href="insumos-solicitados.html">Insumos solicitados</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-nav-link ad" href="#" id="avisosDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/images/icons-nav/avisos-ordenes-menu-icon.svg" alt="Avisos">
+                            <span>Avisos</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="avisosDropdown">
+                            <li><a class="dropdown-item" href="#">Nuevo insumo</a></li>
+                            <li><a class="dropdown-item" href="#">Insumos solicitados</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-nav-link" href="#" id="usuariosDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/images/icons-nav/perfiles-ordenes-menu-icon.svg" alt="Usuario">
+                            <span>Usuarios</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="usuariosDropdown">
+                            <li><a class="dropdown-item" href="#">Usuario 1</a></li>
+                            <li><a class="dropdown-item" href="#">Usuario 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#">
+                            <img src="assets/images/icons-nav/facturas-ordenes-menu-icon.svg" alt="Facturas">
+                            <span>Facturas</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-          </div>
-        </nav>
-      </header>
+        </div>
+    </nav>
+</header>
 
    <main class="content col-12 d-flex justify-content-center">
         <section class="back-tables pre-orders col-11 col-md-7">
@@ -200,20 +158,22 @@
                 </h1>
                 <p>Realiza la búsqueda <b>por nombre o a través de los siguientes filtros</b></p>
                 <div class="d-flex justify-content-between py-4 flex-wrap gap-2">
+                  <div class="d-flex flex-wrap flex-md-nowrap gap-3 align-items-center" style="width: fit-content;">
                     <form class="search d-flex input-group" role="search">
-                        <input class="form-control" type="search" placeholder="Buscar paciente" aria-label="Search">
-                        <button class="btn btn-search" type="submit">
-                            <img src="assets/images/tables/labels/search.svg" alt="search">
-                        </button>
-                      </form>
-                      <button class="btn-filter px-3">
-                        <img src="assets/images/tables/filter.svg" alt="Filtros">
-                        Filtros</button>
+                      <input class="form-control" type="search" placeholder="Buscar paciente" aria-label="Search">
+                      <button class="btn btn-search" type="submit">
+                        <img src="assets/images/tables/labels/search.svg" alt="search">
+                      </button>
+                    </form>
+                    <button class="btn-filter px-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img src="assets/images/tables/filter.svg" alt="Filtros">
+                      Filtros</button>
+                    </div>
                       <button class="btn-blue px-3">Generar nueva captura</button>
                 </div>
 
                 <div>
-                  <table class="table">
+                  <table class="table table-striped">
                     <thead>
                       <tr>
                         <th><input type="checkbox"></th>
@@ -229,7 +189,7 @@
                         <td><input type="checkbox"></td>
                         <td data-label="Fecha de captura">12/04/2024</td>
                         <td data-label="Paciente">Diaz Romero Abraham Saul</td>
-                        <td data-label="#Estudios">3</td>
+                        <td data-label="#Estudios">1</td>
                         <td data-label="Importe total">$10,000.00</td>
                         <td>
                           <div class="custom-dropdown">
@@ -255,7 +215,7 @@
                         <td><input type="checkbox"></td>
                         <td data-label="fecha de captura">11/04/2024</td>
                         <td data-label="Paciente">Perez Díaz Pedro</td>
-                        <td data-label="#Estudios">3</td>
+                        <td data-label="#Estudios">2</td>
                         <td data-label="importe total">$6,000.00</td>
                         <td>
                           <div class="custom-dropdown">
@@ -373,7 +333,7 @@
                 <h3 class="cart-total">Total: <span>$23,548.00</span></h3>
             </div>
         </aside>
-    </main>
+   </main>
 
     <footer class="d-flex flex-column">
       <div class="footer-section">
@@ -457,6 +417,51 @@
     </div>
   </div>
 
+  <!-- Modal Filtro -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Realiza tu búsqueda utilizando los siguientes filtros</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="search d-flex input-group" role="search">
+          <input class="form-control" type="search" placeholder="Buscar paciente" aria-label="Search">
+          <button class="btn btn-search" type="submit">
+            <img src="assets/images/tables/labels/search.svg" alt="search">
+          </button>
+        </form>
+        <div class="d-flex align-items-center flex-column flex-md-row gap-3 py-4">
+          <div class="col-12 col-md-4" style="margin-top: 2em;">
+            <select class="form-select" id="estudio" aria-label="Default select example">
+              <option selected>Estudio</option>
+              <option value="1">1</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-7 d-flex flex-column flex-md-row flex-wrap gap-3">
+            <div>
+              <label for="inicio" class="form-label">Fecha inicio</label>
+              <input type="date" class="form-control" id="inicio">
+            </div>
+            <div>
+              <label for="fin" class="form-label">Fecha fin</label>
+              <input type="date" class="form-control" id="fin">
+            </div>
+          </div>
+        </div>
+        <div>
+
+        </div>
+
+        <button class="btn-blue search-btn my-3">Buscar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="js/filter.js"></script>
     <script src="js/bt-crud.js"></script>
     <script src="js/delete-cart.js"></script>
     <script src="js/crud.js"></script>
