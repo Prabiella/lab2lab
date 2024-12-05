@@ -1352,6 +1352,66 @@ table th {
 .ql-editor {
   min-height: 200px;
 }
+
+
+
+/* Chips container */
+div.chips_input {
+  display: flex;
+  flex-direction: column;
+  color: var(--secondary, #111);
+}
+
+div.chips_input > div.inner {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+span.chip {
+  background: #ECF1FA;
+  color: #25385A;
+  border-radius: 16px;
+  padding: 0.25rem 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  border: 0.16rem solid #25385A;
+}
+
+span.chip button {
+  background: #25385A;
+  border: none;
+  color: #fff;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border-radius: 12px;
+  height: 25px;
+  width: 25px;
+}
+
+#correoinput{
+  border: 0px;
+  background-color: #ECF1FA;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Thankyou Pages */
 
 .HightLight{
