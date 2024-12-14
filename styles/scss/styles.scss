@@ -41,6 +41,23 @@ body {
 }
 
 
+
+
+.btnEnv{
+  background-color: $ad;
+  border: 0px;
+  width: 50%;
+}
+
+.btnEnv:hover{
+  background-color:$footer-section;
+  border: 0px;
+  width: 50%;
+}
+
+
+
+
 /* hr */
 
 hr.separador {
@@ -264,24 +281,27 @@ hr.separador {
   appearance: textfield;
 }
 
+
+
+
 /* Estilos Checkbox */
 input[type="checkbox"] {
   appearance: none;
   width: 20px;
   height: 20px;
   border: 2px solid #ccc;
-  border-radius: 4px; /* Esquinas redondeadas */
+  border-radius: 4px; 
   cursor: pointer;
   position: relative;
   outline: none;
-  background-color: #fff; /* Fondo blanco por defecto */
-  transition: all 0.3s ease; /* Animación suave */
+  background-color: #fff; 
+  transition: all 0.3s ease; 
 }
 
 /* Fondo naranja cuando el checkbox está seleccionado */
 input[type="checkbox"]:checked {
   background-color: orange;
-  border-color: orange; /* Cambiar el borde a naranja también */
+  border-color: orange; 
 }
 
 /* Marca de verificación personalizada */
@@ -533,10 +553,6 @@ footer {
   }
 }
 
-.table-striped>tbody>tr:nth-of-type(odd)>* {
-    --bs-table-color-type: var(--bs-table-striped-color);
-    --bs-table-bg-type: #ECF1FA !important;
-}
 
 /* Tabla catalopg-studies */
 
@@ -822,6 +838,311 @@ footer {
 }
 
 
+///////////////////////
+/// * Estilos-home*///
+//////////////////////
+
+/* Menu */
+.UperMenu {
+  background-color: #2674FB;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0.5rem 1rem; 
+}
+
+.txt-izq {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+}
+
+.txt-izq p {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 0.9rem;
+  color: #fff;
+  margin: 0;
+}
+
+.txt-der {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-end; 
+}
+
+.txt-der p {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 0.9rem;
+  color: #fff;
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row; 
+  gap: 0.5rem; 
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li img {
+  width: 20px; 
+  height: 20px;
+  cursor: pointer;
+}
+
+
+.social-icons li a {
+  color: #FFF;
+  text-decoration: none;
+
+}
+
+
+
+/* BigMenu */
+
+ 
+  .BigMenu{
+
+    .LogoHome img{
+      width: 60%;
+  
+    }
+  
+
+.bullets {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: flex-start; /* Mantiene los elementos alineados a la izquierda */
+  padding: 0.5rem 0; /* Espaciado vertical adicional */
+    }
+
+
+
+.bullets img{
+  display: inline-block;
+  max-width: 30px;
+  
+}
+
+.bullets .txt-desc {
+  display: inline-block;
+    margin-left: 10px;
+}
+
+.txt-desc h6 {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 1.0rem;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.txt-desc p {
+  font-family: "Montserrat", sans-serif !important;
+    font-size: 1.0rem;
+    text-align: left;
+    font-weight: 400;
+    margin: 0;
+ 
+}
+
+  }
+
+
+  .SecondMenu{
+    position: relative;
+    top: 24px;
+    z-index: 1;
+    background-color: #ECF1FA!important;
+    border-radius: 5px;
+    box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
+    padding: 0px;
+
+   } 
+  
+
+   @media (max-width: 991px) {
+    .SecondMenu{
+      top:0;
+      z-index: 0;
+     } 
+  }
+
+
+   @media (max-width: 768px) {
+    .SecondMenu{
+      top:0;
+      z-index: 0;
+     } 
+  }
+
+
+  .NavHome {
+    ul {
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 0 0 10px; 
+    margin: 0; 
+    list-style: none;
+    width: 100%;
+     
+    }
+
+    ul li  {
+      text-align: center;
+     
+    }
+
+    ul li a {
+    
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    color: #000511;
+    text-decoration: none; 
+    padding: 15px; 
+    font-size: 1rem; 
+  
+    }
+
+
+
+    ul li a:hover {
+      color: #007bff;
+    }
+
+
+
+    .login-button {
+      background-color: #007bff;
+      color: #fff; 
+      border-radius: 0 5px 5px 0; 
+      transition: background-color 0.3s; 
+    }
+
+    .login-button:hover {
+     color: #fff;
+    }
+
+    .login-button img {
+      margin-right: 10px; 
+    }
+
+  }
+   
+
+
+
+
+   
+
+
+
+
+/*  Carrusel */
+span.carousel-control-prev-icon {
+  background-image: url('/assets/images/home/slider/back-arrow.svg');
+}
+span.carousel-control-next-icon {
+  background-image: url('/assets/images/home/slider/front-arrow.svg');
+}
+
+
+.carousel-inner {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.carousel-caption {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: flex-start; 
+  height: 100%; 
+  text-align: left;
+  max-width: 600px;
+
+
+  h4{
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  p{
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-caption {
+      align-items: center; 
+      text-align: center; 
+    }
+  }
+
+  @media (max-width: 425px) {
+    h4{
+      font-family: "Montserrat", sans-serif !important;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      margin-top: 10%;
+    }
+
+  p{
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: #fff;
+  }
+  }
+  
+}
+
+
+/* Section Quienes Somos */
+
+.qsomosimg{
+  max-width: 100%;
+}
+
+/* Seccion nuestro servicios */
+.OurServices{
+  background-image:url('/assets/images/back/ourservices.jpg');
+  background-size: cover;
+}
+
+.OurServices{
+    .BulletServ{
+        background-color: rgba(255, 255, 255, 0.218);
+        box-shadow: rgba(13, 38, 76, 0.19) 0px 9px 20px;
+       img{
+        width: 50px;
+        float: left;
+        padding: 0 1%;
+       
+       }
+       h6{
+        text-align: left;
+       }
+       p{
+        text-align: left;
+       }
+    }
+ 
+}
 
 
 
@@ -867,6 +1188,32 @@ footer {
     }
   }
 }
+
+
+
+@media (max-width: 834px) {
+  .OurServices{
+    .BulletServ{
+        background-color: rgba(255, 255, 255, 0.218);
+        box-shadow: rgba(13, 38, 76, 0.19) 0px 9px 20px;
+       img{
+        width: 50px;
+        float: left;
+        padding: 0 1%;
+       
+       }
+       h6{
+        text-align: center;
+       }
+       p{
+        text-align: center;
+       }
+    }
+ 
+}
+}
+
+
 
 /* Carrito */
 .cart {
@@ -971,6 +1318,10 @@ footer {
   box-shadow: 4px 5px 6px #00000038;
   border-radius: 4px !important;
 
+
+
+
+
   &:hover {
     background-color: #155bb5;
   }
@@ -990,7 +1341,6 @@ footer {
   border-radius: 4px !important;
   width: fit-content;
   display: flex;
-  width: fit-content;
 }
 
 /* Datos Paciente */
@@ -1479,7 +1829,6 @@ span.chip button {
     margin: 0.5em 0;
   }
 
-
   .accordion-item,
   .table {
     border: 0;
@@ -1537,15 +1886,19 @@ span.chip button {
     th {
       background-color: transparent !important;
     }
+    .content-status {        
+      justify-content: end;
+    }
 
   }
-
+}
 
   @media screen and (max-width: 600px) {
       .label-orden, p {
         font-size: 0.8em !important;
       }
-  
+
+    
   }
 
 /* Clau */
@@ -1623,12 +1976,7 @@ span.chip button {
 .content-status {
   display: flex;
   justify-content: center;
-
-  @media screen and (max-width: 1024px) {
-    justify-content: end;
-  }
 }
-
 .canceled {
   border: 2px solid #fa5d7c;
   padding: 0.2em 1em;

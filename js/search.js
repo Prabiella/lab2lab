@@ -19,31 +19,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
-
-    function searchInAllTables() {
-  const input = document.querySelector('.search input'); 
-  const filter = input.value.toLowerCase(); 
-  const tables = document.querySelectorAll('table'); 
-
-  tables.forEach(table => {
-    const rows = table.querySelectorAll('tbody tr'); 
-
-    rows.forEach(row => {
-      const cells = row.querySelectorAll('td');
-      let match = false;
-
-      cells.forEach(cell => {
-        if (cell.textContent.toLowerCase().includes(filter)) {
-          match = true; 
-        }
-      });
-
-      row.style.display = match ? '' : 'none';
-    });
-  });
-}
-
-document.querySelector('.search input').addEventListener('input', searchInAllTables);
-
-
