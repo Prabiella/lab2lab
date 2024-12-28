@@ -2018,6 +2018,13 @@ span.chip button {
     font-size: 0.9em;
   }
 }
+
+
+
+
+
+
+
 /* AVISOS */
 
 .list-group-avisos {
@@ -2027,48 +2034,97 @@ span.chip button {
   margin: 0.5em;
   color: #25385A;
   padding: 1em;
-    h2 {
+
+  h2 {
     font-size: 0.95em;
     font-weight: 600;
   }
+
   h3 {
-    font-size : 0.85em;
+    font-size: 0.85em;
     font-weight: 600;
   }
+
   p {
     font-size: 0.8em;
     font-weight: 200;
   }
+
   small {
     font-size: 0.6em;
     color: #25385A !important;
   }
-&.active {
+
+  &.active {
     z-index: 2;
     background-color: #3E95F8 !important;
     border-color: transparent !important;
     color: #fff;
+
     small {
-    color: #fff !important;
-  } 
-}
+      color: #fff !important;
+    }
+  }
+
+  /* Estilo inicial del ícono cuando no está enfocado */
+  img {
+    filter: invert(1); /* Blanco */
+    transition: filter 0.3s ease; /* Transición suave */
+  }
+
+  /* Cambia el color del ícono a negro cuando el botón tiene focus */
+  &:focus img,
+  &:focus-within img {
+    filter: invert(0); /* Negro */
+  }
 }
 
 .tab-content-avisos {
-   h2 {
+  h2 {
     font-size: 0.95em;
     font-weight: 600;
   }
+
   h3 {
-    font-size : 0.85em !important;
+    font-size: 0.85em !important;
     font-weight: 600;
   }
+
   p {
     font-size: 0.8em;
     font-weight: 200;
   }
+
   small {
     font-size: 0.6em;
     color: #25385A !important;
   }
 }
+
+
+.scrollable-paragraph {
+  max-height: 200px; 
+  overflow-y: scroll; 
+  padding-right: 10px;
+  margin-top: 10px; 
+  margin-bottom: 5%;
+}
+
+
+.scrollable-paragraph::-webkit-scrollbar {
+  width: 8px; 
+  background-color: #f1f1f1;
+}
+
+.scrollable-paragraph::-webkit-scrollbar-thumb {
+  background-color: #007bff; 
+  border-radius: 5px;
+}
+
+/* Opcional: estilo del scroll al pasar el mouse */
+.scrollable-paragraph::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3; 
+}
+
+
+
