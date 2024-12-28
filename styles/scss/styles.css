@@ -443,7 +443,7 @@ footer .footer-section ul li a:hover {
 /* Tabla principal */
 .back-tables {
   background: #fff;
-  margin: 1em;
+  margin: 1em 0em;
   padding: 1em;
   box-shadow: 2px 3px 10px rgba(119, 119, 119, 0.1019607843);
 }
@@ -1000,7 +1000,7 @@ span.carousel-control-next-icon {
   flex: 1;
   background: #fff;
   box-shadow: 2px 3px 10px rgba(119, 119, 119, 0.1019607843);
-  margin: 2em 1em 2em 0.5em;
+  margin: 1em 1em 2em 0.5em;
   padding: 1em;
 }
 .cart h2 {
