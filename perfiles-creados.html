@@ -517,49 +517,77 @@
         </div>
     </div>
 
+
       <!-- Modal Filtro -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Realiza tu búsqueda utilizando los siguientes filtros</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form class="search d-flex input-group" role="search">
-            <input class="form-control" type="search" placeholder="Buscar paciente" aria-label="Search">
-            <button class="btn btn-search" type="submit">
-              <img src="assets/images/tables/labels/search.svg" alt="search">
-            </button>
-          </form>
-          <div class="d-flex align-items-center flex-column flex-md-row gap-3 py-4">
-            <div class="col-12 col-md-4" style="margin-top: 2em;">
-              <select class="form-select" id="estudio" aria-label="Default select example">
-                <option selected>Estudio</option>
-                <option value="1">option1</option>
-                <option value="2">option2</option>
-              </select>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Realiza tu búsqueda utilizando los siguientes filtros</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="col-12 col-md-7 d-flex flex-column flex-md-row flex-wrap gap-3">
-              <div>
-                <label for="inicio" class="form-label">Fecha inicio</label>
-                <input type="date" class="form-control" id="inicio">
-              </div>
-              <div>
-                <label for="fin" class="form-label">Fecha fin</label>
-                <input type="date" class="form-control" id="fin">
-              </div>
+            <div class="modal-body">
+              <!-- Formulario de búsqueda rápida -->
+              <form class="search d-flex input-group" role="search">
+                <input class="form-control" type="search" placeholder="Buscar cliente" aria-label="Search">
+                <button class="btn btn-search" type="submit">
+                  <img src="assets/images/tables/labels/search.svg" alt="search">
+                </button>
+              </form>
+              
+              <!-- Formulario con los filtros -->
+              <form action="/procesarBusqueda" method="POST">
+                <div class="row">
+
+
+                <!-- Nombre del perfil -->
+                  <div class="col-md-6 mt-3">
+                    <label for="perfilname" class="form-label">Nombre del perfil</label>
+                    <select class="form-select" id="perfilname" name="perfilname" aria-label="Nombre de perfil">
+                      <option selected>Nombre del perfil</option>
+                      <option value="1">Perfil Órdenes</option>
+                      <option value="2">Perfil Órdenes 2</option>
+                      <option value="3">Perfil Órdenes 3</option>
+                    </select>
+                  </div>
+
+
+
+                  <!-- Fecha de creación -->
+                  <div class="col-md-6 mt-3">
+                    <label for="fecahcreacion" class="form-label">Fecha de creación</label>
+                    <div class="d-flex gap-3">
+                      <input type="date" class="form-control" id="fecahcreacion" name="fecahcreacion">
+                    </div>
+                  </div>
+      
+
+                  <!-- Estatus -->
+                  <div class="col-md-6 mt-3">
+                    <label for="estatus" class="form-label">Estatus</label>
+                    <select class="form-select" id="estatus" name="estatus" aria-label="Selecciona un estatus">
+                      <option selected>Selecciona un estatus</option>
+                      <option value="activo">Activo</option>
+                      <option value="pendiente">Pendiente</option>
+                      <option value="cancelado">Cancelado</option>
+                    </select>
+                  </div>
+                </div>
+      
+                <!-- Botón de búsqueda -->
+                <button class="btn-blue my-3">Buscar</button>
+              </form>
             </div>
           </div>
-          <div>
-  
-          </div>
-  
-          <button class="btn-blue my-3">Buscar</button>
         </div>
       </div>
-    </div>
-  </div>
+    
+    
+    
+    
+    
+    
+    
 
     <script src="js/search.js"></script>
     <script src="js/bt-crud.js"></script>
