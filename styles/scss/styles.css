@@ -443,7 +443,7 @@ footer .footer-section ul li a:hover {
 /* Tabla principal */
 .back-tables {
   background: #fff;
-  margin: 1em 0em;
+  margin: 1em;
   padding: 1em;
   box-shadow: 2px 3px 10px rgba(119, 119, 119, 0.1019607843);
 }
@@ -1000,7 +1000,7 @@ span.carousel-control-next-icon {
   flex: 1;
   background: #fff;
   box-shadow: 2px 3px 10px rgba(119, 119, 119, 0.1019607843);
-  margin: 1em 1em 2em 0.5em;
+  margin: 2em 1em 2em 0.5em;
   padding: 1em;
 }
 .cart h2 {
@@ -1732,27 +1732,37 @@ span.chip button {
   background-color: #ECF1FA !important;
   border-radius: 5px;
   border: none !important;
-  margin: 0.5em;
+  margin: 0.5em 0; /* Ajustar margen para tabs */
   color: #25385A;
   padding: 1em;
+  /* Asegurar que ocupe todo el ancho */
+  display: block;
+  width: 100% !important;
+  text-align: left;
+  /* Cuando el tab está activo */
   /* Estilo inicial del ícono cuando no está enfocado */
   /* Cambia el color del ícono a negro cuando el botón tiene focus */
 }
 .list-group-avisos h2 {
   font-size: 0.95em;
   font-weight: 600;
+  margin-bottom: 0; /* Elimina margen adicional */
 }
 .list-group-avisos h3 {
   font-size: 0.85em;
   font-weight: 600;
+  margin-top: 0.5em;
 }
 .list-group-avisos p {
   font-size: 0.8em;
   font-weight: 200;
+  margin: 0;
 }
 .list-group-avisos small {
   font-size: 0.6em;
   color: #25385A !important;
+  text-align: right !important; /* Alinea a la derecha */
+  display: block; /* Asegura que ocupe el ancho disponible */
 }
 .list-group-avisos.active {
   z-index: 2;
@@ -1762,6 +1772,7 @@ span.chip button {
 }
 .list-group-avisos.active small {
   color: #fff !important;
+  text-align: right !important; /* Mantiene alineación derecha al estar activo */
 }
 .list-group-avisos img {
   filter: invert(1); /* Blanco */
@@ -1769,6 +1780,23 @@ span.chip button {
 }
 .list-group-avisos:focus img, .list-group-avisos:focus-within img {
   filter: invert(0); /* Negro */
+}
+
+/* Asegurar que el contenedor del tab también ocupe todo el ancho */
+#tabs-list .nav-item {
+  width: 100%; /* Asegura que cada tab ocupe el ancho completo dentro de #tabs-list */
+}
+
+/* Ajustes específicos para los elementos dentro de #tabs-list */
+#tabs-list .nav-item button {
+  text-align: left; /* Alinear contenido del botón a la izquierda */
+}
+
+/* Alinear correctamente el contenido dentro de los tabs */
+#tabs-list .d-flex.justify-content-between {
+  display: flex;
+  justify-content: space-between; /* Espacia el contenido entre la izquierda y la derecha */
+  align-items: center; /* Alinea verticalmente */
 }
 
 .tab-content-avisos h2 {
@@ -1789,7 +1817,8 @@ span.chip button {
 }
 
 .scrollable-paragraph {
-  max-height: 200px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   overflow-y: scroll;
   padding-right: 10px;
   margin-top: 10px;
@@ -1832,4 +1861,77 @@ span.chip button {
 
 .scrollable-paragraph2::-webkit-scrollbar-thumb:hover {
   background-color: #99caff;
+}
+
+/* Estilos header */
+/* Estilo por defecto de la campanita */
+#campanita {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  top: 0px;
+}
+
+/* Contador de notificaciones dentro de la campanita */
+#contador-notificaciones {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #ff4d4f;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto cuando hay nuevas notificaciones */
+.nuevas-notificaciones {
+  background-color: #ffeeba;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+  animation: parpadeo 1s infinite;
+}
+
+/* Animación de parpadeo */
+@keyframes parpadeo {
+  0%, 100% {
+    background-color: #ffeeba;
+  }
+  50% {
+    background-color: #ffd54f;
+  }
+}
+/* Asegurarse de que el select esté oculto inicialmente */
+#laboratorioSynlab {
+  display: none; /* El select está oculto inicialmente */
+  position: absolute; /* Para que se posicione debajo del input */
+  top: 100%; /* Asegura que el select se posicione justo debajo del campo de búsqueda */
+  left: 0; /* Alinea el select con el borde izquierdo del input */
+  width: 100%; /* El select ocupará todo el ancho del input */
+  z-index: 9999; /* Asegura que el select esté en el nivel superior */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de lista desplegable */
+  max-height: 200px; /* Limita la altura del select */
+  overflow-y: auto; /* Hace scroll si hay demasiadas opciones */
+}
+
+/* Asegurarnos de que el input tenga suficiente espacio para mostrar el select */
+#buscarlabSynlab {
+  position: relative; /* Esto es necesario para que el select se posicione correctamente debajo de él */
+}
+
+.search-menu {
+  background-color: #ff4d4f;
+  border-radius: 10px;
 }/*# sourceMappingURL=styles.css.map */
